@@ -1,0 +1,13 @@
+{
+  "tag": "ts_inhouse_student",
+  "train_seconds": 580.2,
+  "ultralytics_map50": 0.9381,
+  "ultralytics_map50_95": 0.5249,
+  "P": 0.7514,
+  "R": 0.9427,
+  "own_map50": 0.9272,
+  "F2": 0.897,
+  "hit45": 0.957,
+  "fp_per_img": 0.2486,
+  "n_det": 350
+}

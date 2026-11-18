@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this code or these annotations, please cite both the article and this archive."
+title: "Calibration-Guided Thermal-Anomaly Detection for Reliable UAV Infrared Inspection of Photovoltaic Plants — Code & Annotation Archive"
+type: software
+authors:
+  - family-names: Yin
+    given-names: Junpeng
+    affiliation: "School of Mathematics and Statistics, Changji University"
+  - family-names: Li
+    given-names: Shanbin
+    affiliation: "School of Automation Science and Engineering, South China University of Technology"
+license: MIT
+repository-code: "https://github.com/g45kfkztmx-gif/timc-pv-hotspot-calibration"
+keywords:
+  - infrared thermography
+  - photovoltaic inspection
+  - operating-point calibration
+  - label-efficient detection
+  - measurement uncertainty

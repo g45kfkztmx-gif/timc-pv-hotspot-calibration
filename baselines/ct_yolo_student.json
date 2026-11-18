@@ -1,0 +1,12 @@
+{
+  "tag": "ct_yolo_student",
+  "ultralytics_map50": 0.9324,
+  "ultralytics_map50_95": 0.5091,
+  "P": 0.7521,
+  "R": 0.9462,
+  "own_map50": 0.9233,
+  "F2": 0.8998,
+  "hit45": 0.957,
+  "fp_per_img": 0.2486,
+  "n_det": 351
+}

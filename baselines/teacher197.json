@@ -1,0 +1,13 @@
+{
+  "tag": "teacher197",
+  "train_seconds": 355.5,
+  "ultralytics_map50": 0.9394,
+  "ultralytics_map50_95": 0.5161,
+  "P": 0.7486,
+  "R": 0.9283,
+  "own_map50": 0.9291,
+  "F2": 0.8858,
+  "hit45": 0.9355,
+  "fp_per_img": 0.2486,
+  "n_det": 346
+}

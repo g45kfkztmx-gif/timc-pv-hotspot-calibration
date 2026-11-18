@@ -1,0 +1,114 @@
+th.join(
+    OUTPUT_DIR,
+    "visualization"
+)
+
+
+PARAM_FILE = os.path.join(
+    OUTPUT_DIR,
+    "best_params.json"
+)
+
+
+SEARCH_FILE = os.path.join(
+    OUTPUT_DIR,
+    "search_results.json"
+)
+
+
+
+for p in [
+    OUTPUT_DIR,
+    PSEUDO_LABEL_DIR,
+    VIS_DIR
+]:
+    os.makedirs(
+        p,
+        exist_ok=True
+    )
+
+
+
+# ==========================================================
+# 2. 参数
+# ==========================================================
+
+
+@dataclass
+class DetectParams:
+
+
+    # 灰度异常阈值
+
+    k_sigma: float = 3.0
+
+
+    # 最小面积比例
+
+    min_area_ratio: float = 0.0015
+
+
+    # 最大长宽比
+
+    max_aspect: float = 5.0
+
+
+    # 综合质量阈值
+
+    score_threshold: float = 0.55
+
+
+
+    # 框扩展
+
+    expand_ratio: float = 0.05
+
+
+
+    # 高斯
+
+    blur_size: int = 5
+
+
+
+    # 形态学
+
+    morph_size: int = 3
+
+
+
+    # 稳定性
+
+    delta_k: float = 0.25
+
+
+
+    # 五维权重
+
+
+    w_contrast: float = 0.30
+
+    w_peak: float = 0.25
+
+    w_stability: float = 0.20
+
+    w_edge: float = 0.15
+
+    w_fill: float = 0.10
+
+
+
+
+# ==========================================================
+# 3. 基础工具
+# ==========================================================
+
+
+
+IMG_EXT = (
+    ".jpg",
+    ".jpeg",
+    ".png",
+    ".bmp",
+    ".tif",
+    ".tiff

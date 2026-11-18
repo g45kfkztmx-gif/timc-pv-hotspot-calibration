@@ -1,0 +1,15 @@
+{
+  "title": "Calibration-Guided Thermal-Anomaly Detection for Reliable UAV Infrared Inspection of Photovoltaic Plants — Code & Annotation Archive",
+  "description": "Companion code and annotation archive for the TIMC manuscript: statistical thermal-anomaly proposal generator, operating-point calibration records (F2 plateau-centre selection), seed-42 splits, 197 calibration boxes, 350-image frozen test ground truth, 50-image human inter-annotator agreement sample (box-F1 0.823), matched-budget teacher-student baselines (0.938 / 0.932), and uncertainty/statistics scripts. Imagery not redistributed (PVF-10, public).",
+  "upload_type": "software",
+  "creators": [
+    {"name": "Yin, Junpeng", "affiliation": "School of Mathematics and Statistics, Changji University"},
+    {"name": "Li, Shanbin", "affiliation": "School of Automation Science and Engineering, South China University of Technology"}
+  ],
+  "keywords": ["infrared thermography", "photovoltaic inspection", "operating-point calibration", "label-efficient detection", "measurement uncertainty"],
+  "license": {"id": "MIT"},
+  "related_identifiers": [
+    {"identifier": "https://github.com/g45kfkztmx-gif/timc-pv-hotspot-calibration", "relation": "isSupplementTo", "scheme": "url"}
+  ],
+  "notes": "Annotations and records additionally available under CC-BY-4.0; underlying imagery subject to PVF-10 release terms."
+}

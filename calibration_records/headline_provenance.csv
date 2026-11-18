@@ -1,0 +1,15 @@
+﻿论文数值 / 指标,包内文件,字段 / 值,口径与注意事项
+0.802 单次 mAP@50,exp__rev6_phase3_summary.json,arms.rev6_g42_r1.runs[seed=0].map50,Ultralytics val 标准评测；budget_curve.json 的 ours_r1 在 N=150/197 同为 0.802
+0.789±0.016 (5 seeds),exp__rev6_phase3_summary.json,arms.rev6_g42_r1.map50_mean/std = 0.7892/0.0160,终稿 reported configuration；5 个 seed 逐次值同文件 runs[]
+0.810 (Table 2 Ours),exp__tim_baselines_summary.json,Ours.mAP50 = 0.8096,自有 evaluator，固定 0.25 FA/img 置信度前缀；不是 Ultralytics val
+0.802 与 0.810 并列,exp__tim_baselines_summary.json,evaluator_check: own 0.8096 / ultralytics 0.802 / match true,同一权重、不同评测器；差 0.0076，match 是容差判定不是字面相等
+89.6% (250/279) @0.25 FA/img,exp__rev6e_screening_rate.json,"models.A3_r1_g42: hit 250, n_instances 279, hit_rate 0.8961, fp_per_image 0.251",IoU 0.45 筛查口径；A5_full_g42 是 251/279 = 0.8996 @ 0.286，别混用
+0.8889 hit@0.45,exp__tim_baselines_summary.json,Ours.hit45 = 0.8889 (248/279),tim_exp3 重组预测集，不是 headline 的 89.6%；仅用于 Table 2 同口径对比
+0.482 / 0.597 / 0.325 / 0.338,exp__tim_baselines_summary.json,rows C1/C2/C3a/C3b.mAP50,Table 2 经典方法对比
+0.743±0.195 LODO,exp__lopo_summary.json,folds[*].r1.test_map50 8 折 mean 0.7432 / sd 0.1951,r1 = reported arm；ctrl 0.5799±0.1522 → 论文 0.580±0.152
+0.810→0.832→0.827→0.758,exp__tim_attenuation_summary.json,rows scale 1.0/0.8/0.6/0.4 的 det_mAP50,s=0.4 精确值 0.7579；hit45 0.7778
+0.933 teacher–student,exp__budget_curve.json,"ts[4] (N=197, rev5_ts_student) = 0.9325",监督预算曲线；ts100 0.9415 / ts150 0.9328 是其它预算点
+0.908 S-197,exp__sup_curve.json,"sup[4] (N=197, rev5_s197) = 0.9076",直接监督参考
+0.6264 标定 F2,exp__budget_curve.json,calib[4] (N=197).calib_F2,与 exp__tim_perturb_summary.json 的 reference 一致
+0.604–0.634 / Jaccard 0.865–0.920,exp__tim_perturb_summary.json,rows seed 1–6 calib_F2 / label_set.jaccard,标注扰动；注意扰动重标定会把 lmd 移到 4.0，与终稿 prior=3.0 不矛盾
+旧值 0.8129±0.0288,a5_reproducibility_5seed.json,statistics.mAP50,【已废弃】早期 A5 / tau=0.70 / abl5_adopt070 配置，不能当作终稿 headline
