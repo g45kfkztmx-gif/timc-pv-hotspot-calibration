@@ -11,6 +11,13 @@ authors:
     affiliation: "School of Automation Science and Engineering, South China University of Technology"
 license: MIT
 repository-code: "https://github.com/g45kfkztmx-gif/timc-pv-hotspot-calibration"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.24334204"
+    description: "Concept DOI (always resolves to the latest archived version)"
+  - type: doi
+    value: "10.5281/zenodo.24334205"
+    description: "Version DOI of v1.0.1"
 keywords:
   - infrared thermography
   - photovoltaic inspection

@@ -1,5 +1,7 @@
 # Calibration-Guided Thermal-Anomaly Detection for Reliable UAV Infrared Inspection of Photovoltaic Plants — Code & Annotation Archive
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24334204.svg)](https://doi.org/10.5281/zenodo.24334204)
+
 Companion archive for the manuscript submitted to *Transactions of the Institute of Measurement and Control* (TIMC). This repository deposits the analysis code, bounding-box annotations, evaluation splits, calibration records and baseline results needed to reproduce every reported number. The thermal imagery itself is **not** redistributed here: it is publicly available as the PVF-10 dataset (Wang et al., *Applied Energy* 376:124187, 2024); download it separately and place the 60×110 crops as described in `splits/split_record.txt`.
 
 ## Contents
